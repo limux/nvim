@@ -46,7 +46,7 @@ return {
       "hrsh7th/cmp-buffer",        -- 缓冲区补全源
       "hrsh7th/cmp-path",          -- 路径补全源
       "hrsh7th/cmp-cmdline",       -- 命令行补全源
-      "L3MON4D3/LuaSnip",          -- 代码片段引擎
+      --"L3MON4D3/LuaSnip",          -- 代码片段引擎
       "saadparwaiz1/cmp_luasnip",  -- 代码片段补全源
     },
     config = function()
