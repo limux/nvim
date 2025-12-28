@@ -38,4 +38,20 @@ require("lazy").setup({
   },
   -- install = { colorscheme = { "dracula" }},
   checker = { enabled = true },
+  {
+     "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      if pcall(require, "nvim-treesitter.configs") then
+        require("nvim-treesitter.configs").setup({
+          ensure_installed = { "python", "lua", "vim" },
+          auto_install = true,
+          highlight = { enable = true },
+        })
+        print("nvim-treesitter 配置成功!")
+      else
+        vim.notify("请运行 :Lazy sync 安装插件", vim.log.levels.WARN)
+      end
+    end
+  }
 })

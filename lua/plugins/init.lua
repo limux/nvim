@@ -6,6 +6,7 @@ return {
   -- { import = "plugins.tools" },
   -- { import = "plugins.lsp" },
   { import = "plugins.startify" },
+  -- { import = "plugins.treesitter" },
 
   {
     "ellisonleao/gruvbox.nvim",     -- 插件仓库地址
