@@ -5,18 +5,4 @@ return {
   { import = "plugins.dracula" },
   { import = "plugins.startify" },
   { import = "plugins.treesitter" },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    branch = 'master',
-    build = ":TSUpdate",
-    config = function()
-      local configs = require("nvim-treesitter.configs")
-      configs.setup({
-        ensure_installed = { "lua", "vim", "vimdoc" },
-        highlight = { enable = true },
-        indent = { enable = true },
-      })
-    end
-  }
 }
