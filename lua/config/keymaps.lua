@@ -4,6 +4,10 @@ local M = {}
 function M.setup()
   local opts = { noremap = true, silent = true }
   
+  -- 解决tmux中Home，End的问题
+  vim.keymap.set('i', '<Find>', '<Home>')
+  vim.keymap.set('i', '<Select>', '<End>')
+
   -- 常用操作
   -- 保存文件
   vim.keymap.set("n", "<leader>w", ":w<CR>", opts)
