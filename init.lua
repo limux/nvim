@@ -8,10 +8,10 @@ local python_config = require("utils.python")
 python_config.setup()
 
 -- 基础设置模块
-require("config.basic")
+require("config.basic").setup()
 
 -- 键位映射模块
-require("config.keymaps")
+require("config.keymaps").setup()
 
 -- 插件管理器
 require("config.lazy")
